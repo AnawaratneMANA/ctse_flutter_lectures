@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int count = 0;
 
-  void onIncrement() {
+  void _onIncrement() {
 
     // Invoke the set state method to notify flutter regarding state changers.
     setState(() {
