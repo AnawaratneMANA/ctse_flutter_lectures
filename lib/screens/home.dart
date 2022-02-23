@@ -1,6 +1,7 @@
 import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lab2/components/layout.dart';
 import '../components/list_item.dart';
 
 class Home extends StatefulWidget {
@@ -24,10 +25,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("This is a stateful widget"),
-      ),
+    return Layout(
+      title: "Home",
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -37,6 +36,7 @@ class _HomeState extends State<Home> {
           ),
           ListItem(content: "Content_1"),
           ListItem(content: "Content_2"),
+          ElevatedButton(onPressed: null, child: Text("About")),
         ],
       ),
       floatingActionButton: FloatingActionButton(
