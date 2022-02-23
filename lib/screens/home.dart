@@ -15,10 +15,9 @@ class _HomeState extends State<Home> {
   void onIncrement() {
 
     // Invoke the set state method to notify flutter regarding state changers.
-
-
-
-    count++;
+    setState(() {
+      count++;
+    });
     print("Incrementing the value");
   }
 
