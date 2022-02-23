@@ -13,7 +13,13 @@ class _HomeState extends State<Home> {
   int count = 0;
 
   void onIncrement() {
+
+    // Invoke the set state method to notify flutter regarding state changers.
+
+
+
     count++;
+    print("Incrementing the value");
   }
 
   @override
