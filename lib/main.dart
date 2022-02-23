@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lab2/components/color_management.dart';
 import 'package:lab2/screens/home.dart';
 
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const Home(color: primaryColor),
+      home: const Home(),
     );
   }
 }

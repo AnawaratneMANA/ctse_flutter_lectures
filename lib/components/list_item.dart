@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lab2/components/color_management.dart';
 
 class ListItem extends StatelessWidget {
   final String content;
-  final Color color;
-  const ListItem({Key? key , required this.content, required this.color} ) : super(key: key);
+  const ListItem({Key? key , required this.content} ) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class ListItem extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(content, style: TextStyle(color: color)),
+            child: Text(content, style: TextStyle(color: Theme.of(context).primaryColor),),
           ),
         ],
       ),

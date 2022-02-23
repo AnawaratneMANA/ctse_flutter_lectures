@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import '../components/list_item.dart';
 
 class Home extends StatefulWidget {
-  final Color color;
-  const Home({Key? key, required this.color}): super(key: key);
+  const Home({Key? key}): super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
@@ -27,7 +26,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: const Text("This is a statefulWidget"),
+        title: const Text("This is a stateful widget"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -36,8 +35,8 @@ class _HomeState extends State<Home> {
             onTap: _onIncrement,
             child: Text("Count is $count"),
           ),
-          ListItem(content: "Content_1", color: widget.color,),
-          ListItem(content: "Content_2", color: widget.color),
+          ListItem(content: "Content_1"),
+          ListItem(content: "Content_2"),
         ],
       ),
       floatingActionButton: FloatingActionButton(
