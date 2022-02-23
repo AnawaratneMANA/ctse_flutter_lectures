@@ -32,9 +32,7 @@ class _HomeState extends State<Home> {
         ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        onPressed: (){
-          onIncrement(); // Calling the onIncrement method.
-        },
+        onPressed: onIncrement,
       ),
     );
   }
